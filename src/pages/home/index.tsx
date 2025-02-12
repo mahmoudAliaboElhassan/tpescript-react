@@ -63,6 +63,13 @@ function HomePage() {
     // password: "123456" // ❌ Error: Property 'password' does not exist
   };
 
+  // Utility Type	Purpose
+  // Omit<T, K>	Removes specified properties from T
+  // Pick<T, K>	Keeps only the specified properties from T
+  // Partial<T>	Makes all properties in T optional
+  // Required<T>	Makes all properties in T required
+  // Readonly<T>	Prevents modification of properties in T
+
   const convertToArray = <T,>(val: T): T[] => {
     return [val];
   };
