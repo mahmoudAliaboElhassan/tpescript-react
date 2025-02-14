@@ -12,6 +12,18 @@ function HomePage() {
   // its impact is mainly on development experience,
   // maintainability, and reducing bugs. Here’s a breakdown
 
+// to pick more than one
+  // type User = {
+  //id: number;
+  //name: string;
+  //email: string;
+  //age: number;
+//};
+
+type UserNameAndEmail = Pick<User, "name" | "email">;
+// Result: { name: string; email: string; }
+
+  
   type User = {
     name: string | null;
     age: number | null;
